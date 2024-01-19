@@ -58,6 +58,56 @@ header::before {
     right: 28%;
 }
 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    padding: 10px;
+    border: 2px solid #d3d3d3; /* Light grey border color */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    margin-left: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: -2em; /* Adjust this value to position the menu underneath the header */
+    left: 0;
+    background-color: #f9f9f9; /* Light grey background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #080808;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Grey background color on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
 .menu-icon {
     cursor: pointer;
     position: absolute;
