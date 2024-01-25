@@ -32,16 +32,15 @@ The Accelerator Portal is designed to cater to a diverse audience keen on explor
 
 ## what i have been able to achieve 
 
-**Navigation**: The header navigation and mobile menu provide easy access to different sections of the website.
-**Scroll-to-Top Button**: The inclusion of a scroll-to-top button enhances user navigation and experience.
-**Dropdown Menu**: The implementation of a dropdown menu for filtering demonstrates functionality and enhances user interaction.
-**JavaScript Functionality**: JavaScript functions like toggling the mobile menu and dropdown menu appear to be functioning as intended.
+- **Navigation**: The header navigation and mobile menu provide easy access to different sections of the website.
+- **Scroll-to-Top Button**: The inclusion of a scroll-to-top button enhances user navigation and experience.
+- **Dropdown Menu**: The implementation of a dropdown menu for filtering demonstrates functionality and enhances user interaction.
+- **JavaScript Functionality**: JavaScript functions like toggling the mobile menu and dropdown menu appear to be functioning as intended.
 
 ## areas for improvement 
-
-**Code Modularity**: The JavaScript code could benefit from improved modularity and organization, making it more maintainable.
-**Dropdown Behavior**: I could have Fine-tuned the behavior of the dropdown menu to close when an option is clicked and enhance the styling for a more polished look.
-**Consistency**: Ensuring consistency in styling across different sections of the website for a cohesive visual experience.
+- **Code Modularity**: The JavaScript code could benefit from improved modularity and organization, making it more maintainable.
+- **Dropdown Behavior**: I could have Fine-tuned the behavior of the dropdown menu to close when an option is clicked and enhance the styling for a more polished look.
+- **Consistency**: Ensuring consistency in styling across different sections of the website for a cohesive visual experience.
 
 ## code 
 
