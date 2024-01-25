@@ -47,9 +47,11 @@ The Accelerator Portal is designed to cater to a diverse audience keen on explor
 
 When creating this website i decided to focus more on the use of java.script rather than anything else. The reason for this is because i wanted to use this task to really challenge me in the areas where i felt i was still weak. The fact that with this task we were told that our "client" merely wanted to see what we were capable of and how far with would come given our time span helped me realise rather quickly that i wanted to focus more on the functionality of the website rather than the design.
 
-With html i have been able to creat my drop down menu :
+With html i have been able to creat a 
 
-## Dropdown
+**drop down menu** :
+
+
 
 ```html
 <div class="dropdown" onclick="toggleDropdown()">
@@ -63,5 +65,23 @@ With html i have been able to creat my drop down menu :
     </div>
 </div>
 
+ **mobile menu**
+
+```html
+<div class="menu-icon" onclick="toggleMenu()">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+
+<div class="mobile-menu">
+    <div class="mobile-menu-links">
+        <a href="#" class="header-link" onclick="toggleMenu()">Product</a>
+        <a href="#" class="header-link" onclick="toggleMenu()">Developers</a>
+        <a href="#" class="header-link" onclick="toggleMenu()">Documentation</a>
+        <a href="#" class="header-link" onclick="toggleMenu()">Delivery</a>
+        <a href="#" class="header-link" onclick="toggleMenu()">Learning</a>
+    </div>
+</div>
 
 
