@@ -11,6 +11,8 @@ The Accelerator Portal is designed to cater to a diverse audience keen on explor
 
 
 **mobile version**
+
+
 ![Screen Shot 2024-01-25 at 10 09 48](https://github.com/rileyesther/the-startup-responsive-interactieve-website/assets/144009597/85556023-f3a7-4314-a607-ce973e15da48)
 
 
