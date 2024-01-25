@@ -67,7 +67,6 @@ With html i have been able to creat a
 ```
 **corresponding java.script code**:
 
-## Dropdown Functionality
 
 ```javascript
 document.addEventListener("DOMContentLoaded", function () {
@@ -129,4 +128,12 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 </div>
 
+**corresping java.script code**:
+
+```javascript
+function toggleMenu() {
+    const mobileMenu = document.querySelector('.mobile-menu');
+    mobileMenu.style.display = (mobileMenu.style.display === 'block' || mobileMenu.style.display === '') ? 'none' : 'block';
+}
+```
 
