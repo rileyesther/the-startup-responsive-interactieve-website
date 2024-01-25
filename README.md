@@ -65,7 +65,49 @@ With html i have been able to creat a
     </div>
 </div>
 ```
+**corresponding java.script code**:
 
+## Dropdown Functionality
+
+```javascript
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Function to toggle the dropdown
+    function toggleDropdown() {
+        var dropdownContent = document.querySelector(".dropdown-content");
+        dropdownContent.classList.toggle("show");
+    }
+
+    // Attach the toggleDropdown function to the dropdown button click event
+    var dropdownBtn = document.querySelector(".dropdown-btn");
+    dropdownBtn.addEventListener("click", toggleDropdown);
+
+    // Function to highlight an option on mouseover
+    function highlightOption(element) {
+        element.classList.add("highlight");
+    }
+
+    // Function to remove highlight on mouseout
+    function unhighlightOption(element) {
+        element.classList.remove("highlight");
+    }
+
+    // Placeholder function for selecting a filter
+    function selectFilter(filter) {
+        // Your implementation here
+    }
+
+    // Close the dropdown when clicking outside of it
+    window.addEventListener("click", function (event) {
+        if (!event.target.matches(".dropdown-btn")) {
+            var dropdownContent = document.querySelector(".dropdown-content");
+            if (dropdownContent.classList.contains("show")) {
+                dropdownContent.classList.remove("show");
+            }
+        }
+    });
+});
+```
 
 
  **mobile menu**
