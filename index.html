@@ -5,43 +5,232 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+
+    
     <title>Backbase</title>
 </head>
 <body>
     <header>
-        <div class="header-links">
-            <a href="#" class="header-link">Product</a>
-            <a href="#" class="header-link">Developers</a>
-            <a href="#" class="header-link">Documentation</a>
-            <a href="#" class="header-link">Delivery</a>
-            <a href="#" class="header-link">Learning</a>
-        </div>
-
-        
-        </div>
-       
-       
-        <div class="header-end-square"></div>
-       
-        <div class="menu-icon">
+        <div class="menu-icon" onclick="toggleMenu()">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
 
-        
+        <div class="mobile-menu">
+            <div class="mobile-menu-links">
+                <a href="#" class="header-link" onclick="toggleMenu()">Product</a>
+                <a href="#" class="header-link" onclick="toggleMenu()">Developers</a>
+                <a href="#" class="header-link" onclick="toggleMenu()">Documentation</a>
+                <a href="#" class="header-link" onclick="toggleMenu()">Delivery</a>
+                <a href="#" class="header-link" onclick="toggleMenu()">Learning</a>
+            </div>
+        </div>
         <img src="assets/bblogo.png" alt="Backbase Logo">
         <h1>Accelerator Portal</h1>
     </header>
 
-    <div class="dropdown">
-        <div class="dropdown-btn">Select Product Line <span class="arrow">&#9662;</span></div>
-        <div class="dropdown-content">
-            <a href="#">Product Line 1</a>
-            <a href="#">Product Line 2</a>
-            <a href="#">Product Line 3</a>
-        
+    <div class="dropdown" onclick="toggleDropdown()">
+        <div class="dropdown-btn">Filter <span class="arrow">&#9662;</span></div>
+        <div class="dropdown-content" onmouseleave="closeDropdown()">
+            <a href="#" onclick="selectFilter('A-Z')" onmouseover="highlightOption(this)" onmouseout="unhighlightOption(this)">From A-Z</a>
+            <a href="#" onclick="selectFilter('recent')" onmouseover="highlightOption(this)" onmouseout="unhighlightOption(this)">Most recent</a>
+            <a href="#" onclick="selectFilter('viewed')" onmouseover="highlightOption(this)" onmouseout="unhighlightOption(this)">Most viewed</a>
         </div>
+    </div>
     
+    <section class="device-filter">
+        <button class="filter-button" id="filter-all">All</button>
+        <button class="filter-button" id="filter-web-mobile">Web & Mobile <i class='bx bx-devices arrow'></i> </button>
+        <button class="filter-button" id="filter-web">Web <i class='bx bx-desktop arrow'></i> </button>
+        <button class="filter-button" id="filter-mobile">Mobile <i class='bx bx-mobile-alt arrow'></i> </button>
+    </section>
+
+    <section class="portal">
+        <ul class="cards">
+
+            <li>
+                <i class='bx bx-mobile-alt'></i>
+                <p class="product-line">Digital Banking</p>
+                <p class="business-line">Business</p>
+                <h2>Stream-services</h2>
+                <button id="text-height">
+                    Stream Services are an Open-Source accelerator to connect with Backbase
+                    "out-of-the-box" components that talk to DBS and are responsible for orchestrating calls to DBS.
+                    The orchestration of calling different services is written in a functional programming style on
+                    project reactor enabling resiliency and scalability. Stream Services are packaged as libraries
+                    that can be included in any project, REST Service and/or Spring Cloud Data Flow Applications.
+                </button>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.21</p>
+                <i class='bx bx-git-repo-forked'></i> 20
+                <i class='bx bx-star'></i> 24
+                <i class='bx bx-radio-circle-marked'></i> 15
+                <div>
+                    <a class="text-link" href="#">View docs</a>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-desktop'></i>
+                <p class="product-line">Digital Banking</p>
+                <p class="business-line">Assist</p>
+                <h2>Scim-for-keycloak</h2>
+                <p class="text-box">A third party module that extends keycloak by SCIM functionality.</p>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.22</p>
+                <i class='bx bx-git-repo-forked'></i> 45
+                <i class='bx bx-star'></i> 0
+                <i class='bx bx-radio-circle-marked'></i> 0
+                <div>
+                    <a class="text-link" href="#">View docs</a>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-mobile-alt'></i>
+                <p class="product-line1">Digital Onboarding</p>
+                <h2>Mastercard-openbanking</h2>
+                <p class="text-box">Mastercard OpenBanking Connect solution using Backbase Platform.</p>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.21</p>
+                <i class='bx bx-git-repo-forked'></i> 0
+                <i class='bx bx-star'></i> 0
+                <i class='bx bx-radio-circle-marked'></i> 0
+                <div>
+                    <a class="text-link" href="#">Download (ZIP, 371 Kb)</a>
+                    <i class='bx bx-download arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-devices'></i>
+                <p class="product-line">Digital Banking</p>
+                <p class="business-line">Retail</p>
+                <h2>Backbase-openapi-tools</h2>
+                <p class="text-box">Backbase Open Api Tools (boat) helps manage large OpenAPI projects.</p>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.21</p>
+                <i class='bx bx-git-repo-forked'></i> 20
+                <i class='bx bx-star'></i> 35
+                <i class='bx bx-radio-circle-marked'></i> 17
+                <div>
+                    <a class="text-link" href="#">View docs</a>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-desktop'></i>
+                <p class="product-line3">Digital Lending</p>
+                <h2>Golden-sample-app-ios</h2>
+                <p class="text-box">OpenSource at Backbase.</p>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.20</p>
+                <i class='bx bx-git-repo-forked'></i> 1
+                <i class='bx bx-star'></i> 1
+                <i class='bx bx-radio-circle-marked'></i> 0
+                <div>
+                    <a class="text-link" href="#">Download (ZIP, 371 Kb)</a>
+                    <i class='bx bx-download arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-mobile-alt'></i>
+                <p class="product-line4">Digital Assist</p>
+                <p class="business-line">Customer Support</p>
+                <h2>Event-emitter</h2>
+                <p class="text-box">Event emitter allows you to produce testing events using REST to the underlying
+                    message broker.</p>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.14</p>
+                <i class='bx bx-git-repo-forked'></i> 0
+                <i class='bx bx-star'></i> 3
+                <i class='bx bx-radio-circle-marked'></i> 0
+                <div>
+                    <a class="text-link" href="#">View docs</a>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-mobile-alt'></i>
+                <p class="product-line">Digital Banking</p>
+                <p class="business-line">Wealth</p>
+                <h2>Golden-sample-app</h2>
+                <p class="text-box">This example project is a reference implementation to showcase a number of best
+                    practices to use when building a new Angular SPA that leverages Backbase components and libraries.
+                </p>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.14</p>
+                <i class='bx bx-git-repo-forked'></i> 12
+                <i class='bx bx-star'></i> 18
+                <i class='bx bx-radio-circle-marked'></i> 0
+                <div>
+                    <a class="text-link" href="#">View docs</a>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-devices'></i>
+                <p class="product-line5">Digital Engage</p>
+                <p class="business-line">Audiences</p>
+                <h2>Collector-builder-action</h2>
+                <p class="text-box">A GitHub action to produce a custom OpenTelemetry Collector.</p>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.13</p>
+                <i class='bx bx-git-repo-forked'></i> 2
+                <i class='bx bx-star'></i> 0
+                <i class='bx bx-radio-circle-marked'></i> 0
+                <div>
+                    <a class="text-link" href="#">View docs</a>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+
+            <li>
+                <i class='bx bx-mobile-alt'></i>
+                <p class="product-line5">Digital Engage</p>
+                <p class="business-line">General Notifications</p>
+                <h2>Backbase.github.io</h2>
+                <p class="latest-activity">latest activity</p>
+                <p class="date">2023.12.13</p>
+                <i class='bx bx-git-repo-forked'></i> 2
+                <i class='bx bx-star'></i> 1
+                <i class='bx bx-radio-circle-marked'></i> 0
+                <div>
+                    <a class="text-link" href="#">View docs</a>
+                    <i class='bx bx-right-arrow-alt arrow'></i>
+                    <i class='bx bx-bookmark bookmark'></i>
+                </div>
+            </li>
+           
+        </ul>
+    </section>
+
+
+       
+           
+       
+    <button id="scrollToTopBtn">&#9650;</button>
+              
+           
+
+
+              <script src="script.js"></script>
 </body>
+
 </html>
