@@ -44,7 +44,7 @@ The Accelerator Portal is designed to cater to a diverse audience keen on explor
 
 ## code 
 
-When creating this website i decided to focus more on the use of java.script rather than anything else. The reason for this is because i wanted to use this task to really challenge me in the areas where i felt i was still weak. The fact that with this task we were told that our "client" merely wanted to see what we were capable of and how far with would come given our time span helped me realise rather quickly that i wanted to focus more on the functionality of the website rather than the design.
+When creating this website i decided to focus more on the use of java.script rather than anything else. The reason for this is because i wanted to use this task to really challenge myself in the areas where i felt most weak. The fact that with this task we were told that our client merely wanted to see what we were capable of and how far with would come given our time span helped me realise rather quickly that i wanted to focus more on the functionality of the website rather than the design.
 
 With html i have been able to creat a 
 
