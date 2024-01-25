@@ -65,16 +65,16 @@ header::before {
 }
 
 .dropdown-btn {
-    padding: 6px; /* Adjust padding for a more square shape */
+    padding: 6px; 
     border: 2px solid #d3d3d3;
-    border-radius: 8px; /* Adjust border-radius for a more square shape */
+    border-radius: 8px; 
     cursor: pointer;
     user-select: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    top: 5px; /* Adjust the top value to move it lower */
+    top: -1px; 
 }
 
 
@@ -102,12 +102,12 @@ header::before {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd; /* Grey background color on hover */
+    background-color: #ddd; 
   
 }
 
 .dropdown-content a.clicked {
-    background-color: #ddd; /* Darker background color when clicked */
+    background-color: #ddd; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -272,50 +272,8 @@ h1 {
     position: relative;
 }
 
-/* modal menu */
-.modal {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0;
-    /* background-color: rgba(50, 50, 50, 0.8); */
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-property: z-index, opacity;
 
-}
 
-.modal-content {
-    position: absolute;
-    top: 4em;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    padding: 1em;
-    background-color: #fff;
-    transition: transform 0.3s ease;
-}
-
-.modal.show {
-    z-index: 20;
-    opacity: 1;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-    transition-property: z-index, opacity;
-}
-
-#close-modal {
-    color: black;
-    float: right;
-    font-size: 16px;
-    border: none;
-    text-decoration: none;
-    background: none;
-    padding-right: 1.5em;
-}
 
 #text-height.present {
     text-overflow: unset;
@@ -379,9 +337,9 @@ header.modal-open .arrow {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #fff; /* White background */
-    color: #000; /* Black text color */
-    border: 1px solid #ccc; /* Thin grey border */
+    background-color: #fff; 
+    color: #000; 
+    border: 1px solid #ccc; 
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;

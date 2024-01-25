@@ -20,18 +20,18 @@ function toggleMenu() {
     mobileMenu.style.display = (mobileMenu.style.display === 'block' || mobileMenu.style.display === '') ? 'none' : 'block';
 }
 
-// Wait for the DOM to be ready
-document.addEventListener("DOMContentLoaded", function () {
-    // Your existing code
 
-    // Function to toggle the dropdown
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    
     function toggleDropdown() {
         var dropdownContent = document.querySelector(".dropdown-content");
         dropdownContent.classList.toggle("show");
     }
     
 
-    // Attach the toggleDropdown function to the dropdown button click event
+    
     var dropdownBtn = document.querySelector(".dropdown-btn");
     dropdownBtn.addEventListener("click", toggleDropdown);
     
@@ -44,11 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function selectFilter(filter) {
-        // Your implementation here
+       
     }
     
     
-    // Close the dropdown when clicking outside of it
     window.addEventListener("click", function (event) {
         if (!event.target.matches(".dropdown-btn")) {
             var dropdownContent = document.querySelector(".dropdown-content");
