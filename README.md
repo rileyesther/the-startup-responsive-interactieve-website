@@ -1,7 +1,7 @@
-#Backbase accelerator portal
+# Backbase accelerator portal
 create a user friendly overview of all our github repositories aka accelorators.
 
-##description
+## description
 
 Backbase is undertaking an initiative to revamp its official website by providing a refreshed catalog of available accelerators. This effort stems from the observed clutter on GitHub, where outdated files linger without utility.
 
