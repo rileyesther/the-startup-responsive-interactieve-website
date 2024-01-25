@@ -158,4 +158,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 ```
+## conclusion
 
+Although when it comes to the design there was a lot more that i would've loved to add , i am proud of the results that i have been able to deliver. Im sure with more time that i could've created the website to look exactly like the example we have been given however because of the fact that i wanted to focus more on java.script code with this task , i still hope this could give some ideas that perhaps could be used one day on the real website. This was a fun challenge for me and i have learned so many things that i can;t wait to use in the future.
